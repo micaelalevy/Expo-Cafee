@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "PT Sans", sans-serif;
+}
+
+
+/* HEADER */
+header {
+    background-color: #7d5a49;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    align-items: center;
+}
+
+header img {
+    height: 60px;
+}
+
+
+#hamburguesa {
+    height: 30px;
+}
+
+nav {
+    display: none;
+}
+
+
+
+/* PRINCIPAL */
+#principal {
+    background-image: url('img/imgprincipal.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 50px;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    color: #5c3d2e;
+    margin-bottom: 0.5em;
+}
+
+.contenedorchico p {
+    display: none;
+}
+
+
+/* FORMULARIO */
+#todo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+
+.formulario-contacto {
+    background-color: #fff7f0;
+    border-radius: 15px;
+    padding: 1em 2em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.formulario-contacto h3 {
+    color: #4b2e1f;
+    font-size: 1.4em;
+}
+
+.formulario-contacto p {
+    color: #3e2f24;
+    font-size: 0.9em;
+}
+
+.formulario-contacto input,
+.formulario-contacto select {
+    padding: 0.6em;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.formulario-contacto button {
+    background-color: #8b5a2b;
+    color: white;
+    padding: 0.6em;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.formulario-contacto button:hover {
+    background-color: #704623;
+}
+
+
+/* GRILLA */
+#grilla {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+}
+
+#grilla div {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 90%;
+    aspect-ratio: 1/1;
+}
+
+
+#grilla #uno {
+    background-image: url("img/planta.jpg");
+}
+
+
+#grilla #dos {
+    background-image: url("img/recoleccion.jpg");
+
+}
+
+#grilla #tres {
+    background-image: url("img/secadocafe.jpg");
+}
+
+#grilla #cuatro {
+    background-image: url("img/tostad.jpg");
+}
+
+#grilla #cinco {
+    background-image: url("img/molido.jpg");
+}
+
+#grilla #seis {
+    background-image: url("img/cafe listo.jpg");
+}
+
+
+#grilla #dos h3,
+#grilla #dos a {
+    margin-left: 20px; /* si lo ponia en em me quedaba defazado el h3 del a */
+    margin-top: 2em;
+}
+
+#grilla #dos h3 {
+    font-size: 1.5em;
+}
+
+#grilla a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+#tres h3,
+#tres p {
+    display: none;
+}
+
+
+
+
+
+/* MUCHAS FOTOS GALERIA */
+#galeria {
+    padding: 4rem 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #4b2e1f;
+}
+
+
+.comidas {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.etiqueta{
+    display: none;
+}
+
+article {
+    background-color: #fff7f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(94, 68, 48, 0.2);
+    padding: 1em;
+    text-align: center;
+    width: 90%;
+}
+
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    max-width: 100%;
+}
+
+article h3 {
+    color: #5c3d2e;
+    font-size: 1.2em;
+}
+
+article p {
+    font-size: 0.85em;
+    margin: 0.5em 0 1em;
+    color: #3e2f24;
+}
+
+article a {
+    text-decoration: none;
+    color: #8b5a2b;
+    font-weight: bold;
+    transition: border-bottom 0.3s;
+}
+
+article a:hover {
+    border-bottom: 1px solid #8b5a2b;
+}
+
+#artseis img,
+#artcinco img {
+    display: none;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #7d5a49;
+    padding: 1em;
+    text-align: center; 
+}
+
+footer img {
+    height: 20px;
+    
+}
+
+
+footer a {
+    padding: 2px;
+    border-radius: 6px;
+    transition: 0.2s;
+    margin-right: 2em;
+}
+
+footer a:hover {
+    background-color: #e0c9b9;
+    border: 2px solid #8b5a2b;
+    color: #3e2f24;
+}
+
+
+/* TABLET */
+@media all and (min-width:768px) {
+
+    /* HEADER */
+    nav {
+        display: inline;
+    }
+
+    nav a {
+        margin-left: 1.5em;
+        color: #f5f0e6;
+        text-decoration: none;
+        font-weight: bold;
+        font-weight: 500;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: space-between;
+        transition: 0.3s;
+    }
+
+
+    nav a:hover {
+        background-color: #e0c9b9;
+        border: 2px solid #8b5a2b;
+        border-radius: 6px;
+        padding: 4px 8px;
+        color: #3e2f24;
+    }
+
+
+    #hamburguesa {
+        display: none;
+    }
+
+
+
+
+/* PRINCIPAL */
+    .contenedorchico {
+        max-width: 400px;
+    }
+
+
+/* FORMULARIO */
+#todo {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-contacto {
+    padding: 2em 2em;
+    max-width: 800px;
+    display: inline-block;
+}
+
+.formulario-contacto p {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+
+/* GRILLA */
+#grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 5em;
+}
+
+
+#grilla div {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+}
+
+
+
+#grilla #dos {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    aspect-ratio: initial; /* le saco q me queden cuadradas */
+    height: 100%;
+}
+
+
+#grilla #tres {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    aspect-ratio: initial; /* le saco q me queden cuadradas */
+    height: 100%;
+}
+
+#grilla #seis{
+    grid-row: 2/3;
+    grid-column: 1/2; /* esto habla de q pasamos esta img a este lugar q esta comprendido entre la columna 1 y 2 y la fila 2 y 3 */
+}
+
+#grilla #dos h3,
+#grilla #dos a {
+    margin: 0.5em 0;
+}
+
+#grilla #tres h3,
+#grilla #tres p {
+    padding: 0 4em;
+    margin: 0.5em 0;
+}
+
+
+#grilla #tres h3,
+#grilla #dos h3 {
+    font-size: 1.5em;
+}
+
+#grilla a {
+    color: white;
+    text-decoration: underline;
+}
+
+#tres h3,
+#tres p {
+    display: inline;
+}
+
+/* GALERIA */
+.comidas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.etiqueta{
+    display: none;
+}
+
+#arttres{
+   grid-row: span 2; /* con esto me divide la tercera imagen como que la fila ocupe dos espacios y por eso los otros dos que siguen se acomodan en ese espacio */
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+}
+
+
+}
+
+
+
+
+/* ESCRITORIO */
+@media all and (min-width:1200px) {
+
+
+    /* HEADER */
+    nav {
+        display: inline;
+    }
+
+
+    /* PRINCIPAL */
+    .contenedorchico {
+        max-width: 700px;
+        background-color: rgba(255, 248, 240, 0.9);
+        padding: 2em;
+        border-left: 6px solid #8b5a2b;
+        border-radius: 0 8px 8px 0;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .contenedorchico p {
+        display: inline;
+    }
+
+
+    /* FORMULARIO */
+    #todo {
+        position: absolute;
+        top: 50%;
+        right: 3.5em;
+        z-index: 1; /* con cualquier numero mayor a cero me lo lleva para adelante */
+        
+    }
+
+    .formulario-contacto {
+        max-width: 400px;
+        display: flex;
+    }
+
+    /* GRILLA */
+    #grilla {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+
+
+    /*GALERIA */
+    .comidas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    .comidas article{
+      width: 25%;   
+      position: relative;
+    }
+
+    #artseis img,
+    #artcinco img {
+        display: inline;
+    }
+
+
+.etiqueta {
+    display: inline;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #8b5a2b; 
+    color: white;
+    padding: 0.5em;
+    font-weight: bold;
+    border-radius: 0 0 6px 6px;
+    z-index: 1;
+}
+    
+
+
+    /* FOOTER */
+    footer {
+        text-align: right;
+    }
+}
